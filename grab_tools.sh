@@ -21,32 +21,31 @@ else
 
 fi
 
-# Download SUGMANATS and configuration file
-URL2="https://github.com/dbaseqp/SUGMANATS"
-
-FILENAME2="SUGMANATS"
-
-URL3="https://raw.githubusercontent.com/nationalcptc-teamtools/Fullerton-College/main/config.conf"
-
-FILENAME3="config.conf"
-
-git clone "$URL2" /home/kali/Downloads/cptc/SUGMANATS/
-
-if [ $? -eq 0 ]; then
-
-    echo "SUGMANATS has sucessfully been cloned."
-    
-    cd /home/kali/Downloads/cptc/SUGMANATS/
-    wget "$URL3" -O /home/kali/Downloads/cptc/SUGMANATS/config.conf
-    sudo apt install golang -y
-    go build
-
-    echo "Configuration file has successfully been downloaded and placed."
-else
-
-    echo "SUGMANATS has not successfully been cloned. Configuration file has not successfully been downloaded and placed."
-fi
-
+# # Download SUGMANATS and configuration file
+# URL2="https://github.com/dbaseqp/SUGMANATS"
+# 
+# FILENAME2="SUGMANATS"
+# 
+# URL3="https://raw.githubusercontent.com/nationalcptc-teamtools/Fullerton-College/main/config.conf"
+# 
+# FILENAME3="config.conf"
+# 
+# git clone "$URL2" /home/kali/Downloads/cptc/SUGMANATS/
+# 
+# if [ $? -eq 0 ]; then
+# 
+#     echo "SUGMANATS has sucessfully been cloned."
+#     
+#     cd /home/kali/Downloads/cptc/SUGMANATS/
+#     wget "$URL3" -O /home/kali/Downloads/cptc/SUGMANATS/config.conf
+#     go build
+# 
+#     echo "Configuration file has successfully been downloaded and placed."
+# else
+# 
+#     echo "SUGMANATS has not successfully been cloned. Configuration file has not successfully been downloaded and placed."
+# fi
+# 
     
 
 
