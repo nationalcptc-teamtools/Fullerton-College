@@ -1,0 +1,8 @@
+raven.exe
+raven.exe~
+go.mod
+go.sum
+data.db
+/uploads/loot/*
+dev.db
+test.xml

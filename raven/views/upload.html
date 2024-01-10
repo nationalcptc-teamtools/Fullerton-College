@@ -1,0 +1,41 @@
+<!-- <div class="col-12 col-sm-6 col-md-8 col-lg-9 col-xl-9 p-0 cs-bg-black"> -->
+    <div class="p-0 cs-bg-black m-3 mx-4">
+        <div class="container">
+            <h3 class="col-12 cs-text-white fw-bold mb-4 w-100">Uploads</h3> 
+            <div class="flex-row container w-100 p-0">
+                <div class="col-sm-12">
+                    <div class="col-12 cs-text-white p-3 cs-bg-gray">
+                        <h4>Nmap XML</h4>
+                        <form action="/api/nmap" method="post" enctype="multipart/form-data">
+                            <input type="file" name="nmap">
+                            <input type="submit" value="Upload">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <div class="flex-row container w-100 p-0">
+                <div class="col-sm-12">
+                    <div class="col-12 cs-text-white p-3 cs-bg-gray">
+                        <h4>Loot Item</h4>
+                        <form action="/loot/add" method="post" enctype="multipart/form-data">
+                            <p>System IP:</p>
+                            <input type="text" name="system_ip">
+                            <br><br>
+                            <p>Loot tag:</p>
+                            <select name="loot_tag">
+                                {{range .loot_tags}}
+                                <option value="{{.}}">{{.}}</option>
+                                {{end}}
+                            </select>
+                            <br><br>
+                            <p>File upload:</p>
+                            <input type="file" name="file">
+                            <input type="submit" value="Upload">
+                        </form>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+<!-- </div> -->
